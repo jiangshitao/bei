@@ -1,0 +1,491 @@
+/**
+ * fullPage 2.4.3
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+/* reset */
+
+#superContainer {
+    height: 100%;
+    position: relative;
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 100px;
+    width: 0;
+    opacity:0.4;
+}
+.fp-controlArrow.fp-prev:hover {
+    opacity:1;
+}
+.fp-controlArrow.fp-next {
+    right: 100px;
+    opacity:0.4;
+}
+.fp-controlArrow.fp-next:hover {
+    opacity:1;
+}
+.fp-scrollable {
+    overflow: scroll;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav li,
+.fp-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav li {
+    display: inline-block;
+}
+#fp-nav li a,
+.fp-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav li .active span,
+.fp-slidesNav .active span {
+    background: #333;
+}
+#fp-nav span,
+.fp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.fp-tooltip {
+    position: absolute;
+    top: -2px;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+}
+.fp-tooltip.right {
+    right: 20px;
+}
+.fp-tooltip.left {
+    left: 20px;
+}
+
+
+/* 添加 */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+.fl { float:left; }
+.fr { float:right; }
+
+.main{
+    width:100%;
+}
+
+/*第一屏banner */
+.slide img{
+    width:100%;
+}
+.section-focus-pic ul img {
+    position: relative;
+    z-index:9998;
+}
+.banner{
+    /* width:100%;*/
+    left:0;
+    z-index:9999;
+    position: absolute;
+    bottom: 130px;
+
+
+}
+.banner>div{
+    width:25%;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0;
+}
+.banner>div:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    /*border-bottom: 2px solid #000;*/
+}
+.banner img{
+    width:100%;
+    display: block;
+   /* border-bottom:10px solid #000;*/
+}
+.first .line{
+    width:100%;
+    background:#000;
+    height:10px;
+    z-index: 10001;
+    position: absolute;
+    bottom: 130px;
+    opacity: 0.15;
+    filter:alpha(opacity=15);
+}
+
+/* 第二屏 */
+.menu-icon{
+    width: 20%;
+    margin:0 auto;
+}
+.menu-icon img{
+    width:7%;
+    display: block;
+    margin:5% auto 0;
+}
+.options .nav li {
+    width:92px;
+    height:32px;
+    line-height: 32px;
+    font-size:16px;
+    letter-spacing: 0.1em;
+    text-align:center;
+    position:relative;
+    border:1px solid #aaaaaa;
+    cursor:pointer;
+    border-radius:6px;
+    margin-right:17px;
+    color: #aaaaaa;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.second_list{
+    width:1200px;
+    margin:0 auto;
+}
+.second{
+    margin-top:50px;
+}
+
+.options {
+    width:100%;
+    text-align: center;
+    margin-top:2%;
+}
+.options .nav{
+    width:600px;
+    margin:0 auto;
+}
+.options .nav li:last-child {
+    margin-right:0%;
+}
+.options .nav .active  {
+    border:1px solid #000;
+    color: #000;
+}
+.title h2{
+    font-size:36px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+.title p{
+    font-size:18px;
+    font-weight: 100;
+    color: #999;
+    width: 60%;
+    margin-left: 20%;
+    margin-top:0.6%;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing:3px;
+    line-height: 28px;
+}
+.section{
+    background: #fff !important;
+}
+.tabCon2 h2{
+    color: #000;
+    font-size:1.8em;
+    font-weight: 400;
+    margin:2% 0;
+}
+.tabCon2{
+    width:100%;
+
+    display: none;
+}
+
+.tabCon2 p{
+    text-align: center;
+    color: #666666;
+    font-size:1.8em;
+    font-weight: 100;
+    margin:2% 0;
+    margin-left: 0%;
+}
+.tabCon2 span{
+    text-align: center;
+    color: #e8690c;
+    font-size:1.2em;
+    font-weight: 400;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.tabCon2 .tabCon2_btn a{
+    margin-left:47%;
+}
+.tabCon2 img{
+    width:90%;
+    margin-top:-4%;
+}
+.tabCon2 .appointment{
+    color: #e8690c;
+    border:1px solid #dcdcdc;
+    background: url(../images/time.png) no-repeat 12% 54%;
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    font-size:1.5em;
+    border-radius: 5px;
+    padding:0 10px;
+    z-index:2;
+    position: absolute;
+    margin:0 auto;
+    cursor: pointer;
+    display: block;
+    margin-bottom:-5%;
+    text-align: right;
+}
+
+.tabCon2 .menu-icon{
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+/* 第三屏 */
+.third{
+    width:1200px;
+    margin:0 auto;
+    margin-top:100px;
+}
+.third_title{
+    margin-top:-7%;
+}
+.item{
+    width:1200px;
+    margin:0 auto;
+
+}
+.money_item{
+    width:400px;
+    background: #fff;
+    box-shadow: #c7c6c6 0px 0px 10px;
+    color: #000;
+    padding:4% 0;
+    position: relative;
+    z-index: 3;
+    transition: all 0.6s;
+}
+.money_item:hover{
+    transform: scale(1.1);
+    z-index: 9999999999;
+}
+.money_item:hover .appointment{
+    color: #e8690c;
+    background: url(../images/time.png) no-repeat 12% 54%;
+}
+.money_item:hover .shoufu{
+
+    background: url(../images/index_third02.png) no-repeat 50% 50%;
+
+}
+.money_item h4{
+    font-size:1.8em;
+    font-weight: 400;
+}
+.money_item .card{
+    font-size:1.3em;
+    color: #666666;
+    margin-top:2%;
+}
+.money_item .interest{
+    font-size:1.0em;
+    color: #999999;
+}
+.money_item .appointment{
+    display: block;
+    color: #c6c6c6;
+    border:1px solid #dcdcdc;
+    background: url(../images/time02.png) no-repeat 12% 54%;
+    width:100px;
+    height: 40px;
+    text-align: right;
+    padding-right: 4%;
+    line-height: 40px;
+    font-size:1.4em;
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin:8% auto 0;
+}
+.shoufu{
+    width:247px;
+    margin-left: 80px;
+    background: url(../images/index_third01.png) no-repeat 50% 50%;
+    border-radius: 50%;
+}
+.shoufu img{
+    display: block;
+    width:80%;
+    margin: 15% auto;
+}
+.shoufu .shoufu_info_02{
+    color: #fff;
+    font-size:1.2em;
+}
+.shoufu .shoufu_info_03{
+    color: #fff;
+    font-size:1.2em;
+}
+.shoufu .shoufu_info_02 span{
+    color: #fff;
+    font-size: 3.6em;
+}
+.shoufu .shoufu_info_01{
+    color: #fff;
+    font-size: 1.2em;
+}
+.shoufu .shoufu_info{
+    display: block;
+    width:100%;
+    padding-top:30%;
+}
+.info_01{
+    color: #999;
+    font-size:1.2em;
+    line-height: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

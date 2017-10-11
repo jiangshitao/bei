@@ -1,0 +1,115 @@
+/* 酷站代码整理 http://www.5icool.org */
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+.section-focus-pic{
+    -margin:8px 0 0 0;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+
+}
+.section-focus-pic ul li{
+    position:absolute;
+    top:0;
+    left:100%;
+    width:100%;
+}
+.section-focus-pic .controler{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+.section-focus-pic .controler b{
+    cursor:pointer;
+    width:20px;
+    height:10px;
+    display:block;
+    overflow:hidden;
+    text-indent:20px;
+   /* background:url(imgs/news_index_icon.png) no-repeat -136px 3px;*/
+    float:left;
+    margin:0 0 0 5px;
+}
+.section-focus-pic .controler b.down{
+    background-position:-161px 1px;
+}
+.section-focus-pic .controler2 a{
+    display:block;
+    width:40px;
+    position:absolute;
+    top:46%;
+    height:40px;
+
+    z-index: 10000;
+}
+.section-focus-pic .controler2 a i{
+    cursor:pointer;
+    display:block;
+    width:22px;
+    height:34px;
+    background:url(imgs/star.png) no-repeat;
+}
+.section-focus-pic .controler2 .prev{
+    left:80px;
+}
+.section-focus-pic .controler2 .prev i{
+    background-position:-34px -68px;
+    _background:none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='imgs/star_05.png');
+    margin-left:5px;
+}
+.section-focus-pic .controler2 .prev:hover i{
+    left:10px;
+    background-position:-34px -24px;
+    _background:none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='imgs/star_03.png');
+}
+.section-focus-pic .controler2 .next{
+    right:80px;
+}
+.section-focus-pic .controler2 .next i{
+    background-position:-62px -68px;
+    _background:none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='imgs/star_06.png');
+    margin-left:10px;
+}
+.section-focus-pic .controler2 .next:hover i{
+    right:10px;
+    background-position:-62px -24px;
+    _background:none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='imgs/star_04.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

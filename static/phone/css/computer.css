@@ -1,0 +1,469 @@
+
+
+    html{
+        height:100%;
+    }
+    #calculator{
+        background-color: #ffffff;
+        font-family:'微软雅黑';
+        position: relative;
+        height:100%;
+    }
+    .counter{
+        flex-direction: column;
+    }
+    .counter>div:nth-child(1), .counter>div:nth-child(2){
+        justify-content: space-between;
+    }
+    .counter>div{
+        display: flex;
+        padding-left: 2.6%;
+        border-bottom: 1px solid #ececec;
+    }
+    .counter>div:last-child{
+        border-bottom: none;
+    }
+    p{
+        font-size: 1.6rem;
+        /*font-weight: bold;*/
+    }
+    .counterTop>p{
+       /* font-weight:bold;*/
+        line-height: 6rem;
+    }
+    .counterTop>p:nth-child(2){
+        color: #999999;
+        margin-left: 24%;
+    }
+    .checkbox {
+        position: relative;
+        display: inline-block;
+        /*margin-top: 1rem;*/
+        margin-top: 27%;
+        /*padding-right: 5.8%;*/
+        margin-right: 1em;
+    }
+    /*checkbox公共样式的设置*/
+    .checkbox:after, .checkbox:before {
+        font-family: FontAwesome;
+        -webkit-font-feature-settings: normal;
+        -moz-font-feature-settings: normal;
+        font-feature-settings: normal;
+        -webkit-font-kerning: auto;
+        -moz-font-kerning: auto;
+        font-kerning: auto;
+        -webkit-font-language-override: normal;
+        -moz-font-language-override: normal;
+        font-language-override: normal;
+        font-stretch: normal;
+        font-style: normal;
+        font-synthesis: weight style;
+        font-variant: normal;
+        font-weight: normal;
+        text-rendering: auto;
+    }
+    .checkbox label {
+        width:5rem;
+        height: 2.6rem;
+        /*控制轨道的长宽*/
+        border: 1px solid #e4e4e4;
+        position: relative;
+        display: inline-block;
+        border-radius: 2.5rem;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .checkbox label:after {
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        /*控制圆环的半径*/
+        border-radius: 100%;
+        left: 0;
+        top: -0px;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .checkbox input {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+    /*checkBox的技术*/
+    .checkbox input:hover + label:after {
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    }
+    .checkbox input:checked + label:after {
+        left: 2.7rem;
+        /*控制滑块移动的距离*/
+    }
+    .model-1 .checkbox input:checked + label {
+        background: #ff6c00;
+    }
+
+    .counterBody p{
+        line-height:6rem ;
+
+    }
+    .counterBody_p_01{
+        color: #999999;
+
+    }
+    .counterMain p:nth-child(2){
+        margin-left: 9%;
+    }
+
+    .counterMain p{
+        line-height:5.9rem ;
+    }
+    .counterMain{
+        position: relative;
+    }
+    .counterMain .up{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 7%;
+    }
+    .counterMain .down{
+        display: block;
+        position: absolute;
+        top: 2.5rem;
+        right: 7%;
+    }
+
+    .counterFooter{
+        background: #ffffff;
+        margin-top:0.8rem ;
+        position: relative;
+        border: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .counterFooter:before{
+        content: '';
+        width: 100%;
+        height: 0.8rem;
+        background: #f2f2f2;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+    }
+    .counterFooter .btn{
+        width: 78%;
+        line-height: 5rem;
+        margin:3% 11%;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-align: center;
+        background-color: #f75500;
+        border-radius: 5px;
+    }
+    #counterMain_5 p:nth-child(2){
+        margin-left: 6%;
+    }
+    .primary{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #ffffff;
+        z-index: 1020;
+        margin: 0;
+    }
+    .primary_confirm{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4%;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .primary_confirm p{
+        line-height:4.4rem;
+    }
+    .primary_num{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #999999;
+    }
+    .primary_num a{
+        display: inline-block;
+        padding: 0 10%;
+        line-height:4.1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .counterBody_p{
+        margin-right: 6%;
+    }
+    .primary_num_main{
+        padding-bottom: 1rem;
+        overflow: scroll;
+    }
+    .click_color{
+        color: #fc7710;
+    }
+    .mask{
+        height: 120%;
+    }
+      .calc_done{
+          font-family: "微软雅黑";
+          animation:slidePage 0.5s;
+
+      }
+    .slidePage{
+        animation:slidePageL 0.5s ;
+    }
+    @keyframes slidePage {
+        0% {
+            opacity: 0;
+            transform: translateX(500px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slidePageL{
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(-2000px);
+        }
+    }
+    h1,h2,p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .countFinishTop{
+        text-align: center;
+        background: #f75500;
+    }
+    .countFinishTop p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color:#fdd6cb;
+    }
+    .countFinishTop p:first-child{
+        padding-top: 2rem;
+    }
+    .countFinishTop p:last-child{
+        margin-bottom: 2rem;
+    }
+    .countFinishTop h1{
+        font-size: 7rem;
+        line-height: 6.5rem;
+
+        color: #ffffff;
+    }
+    .countFinishTop h2{
+        font-size: 4rem;
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.9rem;
+        color: #ffffff;
+    }
+    .countFinishBody{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 1px #ebebeb;
+        border-top:solid 1px #ebebeb;
+        background: #fff;
+    }
+    .countFinishBody>div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .countFinishBody>div:nth-child(2){
+        border-left: solid 1px #ebebeb;
+        border-right: solid 1px #ebebeb;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .countFinishBody span{
+        font-size: 2rem;
+        color: #0055a4;
+        text-align: center;
+    }
+    .countFinishBody p{
+        font-size: 1.3rem;
+        color:#b3b3b3;
+        margin-top: 0.2rem;
+    }
+    .countFinishMain{
+        flex-direction: column;
+        position: relative;
+        background: #fff;
+    }
+    .countFinishMain>div{
+        display: flex;
+
+    }
+    .countCircle{
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 2px solid #cecece;
+        margin-top:1.7em;
+    }
+    .countFinishMain>div{
+        padding-left: 24.5%;
+       /* padding-top: 1.7rem;*/
+        height: 4.4em;
+       /* padding-bottom: 1.7rem;*/
+        border-bottom: 1px solid #ebebeb;
+        font-size: 1.3rem;
+    }
+    .countFinishMain>div>span{
+        color: #999999;
+        font-size: 1.3rem;
+        margin-left: 3%;
+        line-height: 4.4em;
+        display: inline-block;
+    }
+    .countFinishMain>div>p{
+        margin-left: 7.7%;
+        font-weight: 400;
+        line-height: 4.4em;
+        margin-top:-2%;
+    }
+    /*.countFinishMain:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5.5rem;
+        top:14.95rem;
+        left: 0;
+        background-color: #f2f2f2;
+       !* box-shadow: 0 2px 2px #e9e9e9;*!
+    }*/
+    .countFinishFoot{
+        width:100%;
+        margin-bottom: 10%;
+    }
+    .countButton{
+        height: 5rem;
+        width: 78%;
+        line-height: 5rem;
+        background: #f75500;
+        margin-left: 11%;
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-top: 10rem;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .countFinishFoot{
+        position: fixed;
+        bottom: 0;
+    }
+    /* wang */
+    .countFinishMain>div>#car_tax{
+        margin-left: 12%;
+    }
+    .countFinishMain>div>#car_ins{
+        margin-left: 16%;
+    }
+
+
+
+
+
+
+    /* 计算器 */
+
+    *{
+        margin:0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        font-family: Arial,微软雅黑;
+        width: 100%;
+        min-height: 0;
+        height: auto ;
+    }
+    .mask{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0,0,0,0.8);
+        /*z-index: 10;*/
+    }
+    /*带对勾的弹窗*/
+    #submit_window{
+        width: 92%;
+        height: 19.75rem;
+        border-radius: 4px;
+        background-color: #ffffff;
+        position: absolute;
+        top:15.9rem;
+        left: 4%;
+        z-index: 1000;
+    }
+
+    #submit_window img{
+        position: absolute;
+        top:2.7rem;
+        left: 50%;
+        transform: translate(-50%);
+        height: 3.8rem;
+    }
+    h3{
+        margin-top: 8.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .btn_surePledge{
+        border: none;
+        border-top: 1px solid #e5e5e5;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 4px 4px;
+        background-color: #ffffff;
+        height: 6rem;
+        color: #0088de;
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

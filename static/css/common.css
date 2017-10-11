@@ -1,0 +1,491 @@
+*{ padding:0px; margin:0}
+body{ color:#fff; font-family:"Microsoft Yahei"; text-align:center;}
+
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+body { font-size:12px; font-family:"微软雅黑"; }
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* 添加 */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+.fl { float:left; }
+.fr { float:right; }
+
+/* nav */
+.nav_con{
+    width:1200px;
+    margin:0 auto;
+}
+
+.menu li{
+    list-style:none;
+    float:left;
+    display:inline-block;
+    font-size: 16px;
+    line-height: 48px;
+}
+.menu li a{
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    margin:0 20px;
+}
+.menu .last{
+    border:1px solid #515152;
+    height:30px;
+    width:8em;
+    margin-top:9px;
+    background: #3b3b3c;
+    border-radius: 5px;
+    background: url(../images/nav_icon.png) no-repeat 10% 50%;
+}
+.menu .last a{
+    display: block;
+    margin-top:-9px;
+    text-align: right;
+}
+.menu li a:hover{
+    color: #999;
+}
+.header_nav{
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    height:48px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+}
+.nav_logo{
+    cursor: pointer;
+}
+.nav_logo img{
+    margin-top:19%;
+}
+.nav_logo p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 48px;
+    color: #fff;
+}
+.nav_logo:hover{
+    opacity:0.6;
+    filter:alpha(opacity=60);
+}
+
+/* footer */
+
+.friend_link{
+    text-align: right;
+}
+.friend_link a{
+    color: #999;
+    font-size:1.1em;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.footer_container_left p a{
+    cursor:pointer;
+    margin-right: 4%;
+}
+.footer_container_left p{
+    color: #999;
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.footer_container{
+    margin: 0 auto;
+    width:1200px;
+}
+
+.footer{
+    padding:10px 0;
+    width:100%;
+    margin: 0 auto;
+    background:#f8f8f8;
+}
+
+/*
+.footer1{
+    padding:1% 0;
+    width:1200px;
+    margin:0 auto;
+    margin-top:100px;
+    background:#f8f8f8;
+    !* background:#000;*!
+    !*-margin-top:3%;*!
+   !* position: absolute;
+    bottom: 0;*!
+}
+*/
+
+.footer01{
+    padding:1% 0;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+.footer01 .footer_container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.footer01 .footer_container_left p a{
+    cursor:pointer;
+    margin-right: 4%;
+}
+.footer01 .footer_container_left p{
+    color: #999;
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.footer01 .footer_container_left{
+    width:60%;
+}
+
+
+.col-contact p{
+    text-align: left;
+}
+.col-contact .phone{
+    font-size: 2.6em;
+    color: #333;
+}
+.col-contact_phone{
+    margin-right: 0%;
+}
+.col-contact .J_serviceTime-normal{
+    font-size: 1.0em;
+    color: #999;
+    margin:2% 0;
+}
+.col-contact a{
+    display: inline-block;
+    border:1px solid #dcdcdc;
+    width: 90px;;
+    -padding:3% 4% 3% 6%;
+    color: #686868;
+    border-radius: 5px;
+    font-size: 1.2em;
+    height:30px;
+    line-height: 30px;
+    padding-right:10px;
+}
+.col-contact .active{
+    color: #ff8a32;
+}
+.code p{
+    color: #666;
+    font-size: 1.2em;
+    margin-top:2%;
+    margin-left: 2%;
+}
+.code img{
+    width:80%;
+}
+.col-contact .ask{
+    text-align: right;
+    color: #ff8a32;
+    background: url(../images/ask.png) no-repeat 10% 55%;
+}
+.col-contact .join{
+    text-align: right;
+    color: #999;
+    background: url(../images/join.png) no-repeat 10% 55%;
+}
+.col-contact div{
+    text-align: left;
+}
+
+
+
+/* 悬浮框开始 */
+.sus{
+    position: fixed;
+    right: 10px;
+    top: 40%;
+    box-shadow: #999 0px 0px 20px;
+}
+.izl-rmenu{
+
+    width: 82px;
+    -webkit-box-shadow: #DDD 0px 1px 5px;
+    -moz-box-shadow: #DDD 0px 1px 5px;
+    box-shadow: #DDD 0px 1px 5px;
+    z-index:999;
+}
+
+.izl-rmenu .btn_top {
+    background-image: url(../images/float_top.gif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+    height: 39px;
+    width: 82px;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+}
+.izl-rmenu .btn_top:hover {
+    background-image: url(../images/float_top.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.izl-rmenu li{
+    width:80px;
+    height:78px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+}
+.izl-rmenu li:hover{
+
+    background: #eaeaea;
+
+}
+.izl-rmenu .consult{
+    display: block;
+    width:80px;
+    height:78px;
+    background:url(../images/sus_qq.png) no-repeat 50% 30%;
+    color: #999999;
+    margin-bottom: 0;
+}
+.izl-rmenu .span01{
+    display: block;
+    position: absolute;
+    color: #000;
+    top:55px;
+    width:80px;
+}
+.izl-rmenu .phone{
+    display: block;
+    width:80px;
+    height:78px;
+    background:url(../images/sus_phone.png) no-repeat 50% 30%;
+    color: #999999;
+    margin-bottom: 0;
+}
+.izl-rmenu .span02{
+    display: block;
+    position: absolute;
+    color: #000;
+    top:135px;
+    width:80px;
+}
+.izl-rmenu .weixin{
+    display: block;
+    width:80px;
+    height:78px;
+    background:url(../images/sus_weixin.png) no-repeat 50% 30%;
+    color: #999999;
+    margin-bottom: 0;
+}
+.izl-rmenu .span03{
+    display: block;
+    position: absolute;
+    color: #000;
+    top:215px;
+    width:80px;
+}
+
+.izl-rmenu .span03{
+    display: block;
+    position: absolute;
+    color: #000;
+    top:135px;
+    width:80px;
+}
+
+
+.izl-rmenu_code{
+    position: absolute; top:78px; left:-110px; display: none;
+
+    background: red;
+    box-shadow: #ccc 0px 0px 10px;
+
+}
+
+
+/* 悬浮框结束 */
+
+
+
+/* 预约弹出框开始 */
+
+
+.bounced{
+    display: none;
+    width:30%;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top:28%;
+    left:35%;
+    cursor: pointer;
+    z-index: 9999;
+}
+.bounced input{
+    display: block;
+    border:1px solid #dcdcdc;
+    width:77%;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    font-size: 1.3em;
+    padding-left: 3%;
+}
+.bounced .name{
+    margin-top:10%;
+}
+.bounced h2{
+    text-align: left;
+    margin:20px 10%;
+    font-weight:500;
+    color: #000;
+}
+.bounced img{
+    position: absolute;
+    top:7%;
+    right: 5%;
+}
+.bounced .btn{
+    background: #59c7f9;
+    border:none;
+    color: #fff;
+    width:80%;
+}
+.bounced p{
+    color: #999;
+    margin-top:-2%;
+    margin-bottom: 4%;
+}
+#span_usesr{
+    display: block;
+    width: 80%;
+    height: 3em;
+    font-size: 1.3em;
+    line-height: 3em;
+    background: #e8690c;
+    margin:0 auto;
+    border-radius: 6px;
+    color: #fff;
+    display: none;
+    margin-bottom: -5%;
+}
+
+.mask{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    width:100%;
+    background: #000;
+    height:1000px;
+
+}
+.menu-icon{
+    width: 20%;
+    margin:0 auto;
+}
+.menu-icon img{
+    width:7%;
+    display: block;
+    margin-top:5%;
+    margin-left: 34%;
+}
+
+
+.tabCon2 .appointment{
+    display: block;
+    color: #e8690c;
+    border:1px solid #dcdcdc;
+    background: url(../images/time.png) no-repeat 12% 54%;
+    width:94px;
+    font-size:1.5em;
+    border-radius: 5px;
+    padding:0.5% 0.8%;
+    z-index:9999;
+    position: absolute;
+    left:47%;
+    cursor: pointer;
+    display: block;
+    margin-bottom:-5%;
+    text-align: right;
+}
+
+
+/* 预约弹出框结束 */
+
+/* 12-05 */
+.footer_container_left p a{
+    cursor:pointer;
+    margin-right: 4%;
+}
+.footer_container_left p{
+    color: #999;
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.footer_container{
+    margin: 0 auto;
+    width:1200px;
+}
+
+.footer{
+    padding:30px 0;
+    width:100%;
+    margin: 0 auto;
+    background:#f8f8f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

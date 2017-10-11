@@ -1,0 +1,362 @@
+
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+body { font-size:12px; font-family:"微软雅黑"; }
+span{ display:block; }
+/* public */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+.fl { float:left; }
+.fr { float:right; }
+
+html,body{overflow:hidden;overflow-y:auto;}
+
+/* nav */
+.nav {
+    position: fixed;
+    top:0;
+    background: #323233;
+    height:50px;
+    width:100%;
+    z-index: 2;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+}
+.nav_top {
+    height: 50px;
+}
+
+.nav .nav_fl img{
+    width:20%;
+    line-height: 40px;
+    margin-top:15%;
+    margin-left: 10%;
+}
+.nav .nav_fl p{
+    color: #fff;
+    line-height: 50px;
+    font-size: 1.4em;
+}
+
+.nav .nav_fr{
+    margin-right:10px;
+    line-height: 50px;
+}
+
+.nav .nav_fr img{
+    width:46%;
+    margin-top:36%;
+}
+.nav .nav_hide{
+    width:100%;
+    background: #323233;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    border-top: 1px solid #444444;
+}
+.nav .nav_hide li{
+    margin:0 6%;
+    border-bottom: 1px solid #444444;
+}
+.nav .nav_hide li:last-child{
+    border-bottom:none;
+}
+.nav .nav_hide a{
+    color: #fff;
+    display: block;
+    font-size:1.2em;
+    padding:4% 0;
+    text-align: left;
+}
+.nav .active{
+    display:block ;
+}
+
+.nav_fr span{
+    display:inline-block;
+    color: #fff;
+    font-size: 1.4em;
+}
+.swiper-pagination-bullet{
+    width:10% !important;
+    height: 4px !important;
+    background: #000;
+    border-radius: 0 !important;
+    opacity: 0.3 !important;
+    filter:alpha(opacity=50) !important;
+}
+
+
+/* footer_nav */
+.footer_nav{
+    background: #fafafa;
+    padding:1% 0 6%;
+}
+.footer_nav_link a{
+    display: inline-block;
+    width:32%;
+    text-align: center;
+    color: #666666;
+    border-right: 1px solid #cdcdcd;
+    margin:5% 0;
+}
+.footer_nav_link a:last-child{
+    border-right:none;
+}
+.footer_nav p{
+    color: #666666;
+    font-size: 0.8em;
+    width:90%;
+    margin:0 auto;
+    line-height: 1.6em;
+}
+.footer_nav span{
+    color: #e66923;
+    font-size: 0.8em;
+    width:90%;
+    margin:0 auto;
+    line-height: 1.6em;
+}
+.bottom_left{
+    width: 70%;
+    /* margin-left: 3%;*/
+}
+.bottom_right{
+    width:30%;
+    margin-right: -8%;
+}
+.bottom_right img{
+    display: block;
+    width:60%;
+    text-align: right;
+}
+.bottom_right_hidden{
+    display: none;
+}
+.bottom_right_hidden img:first-child{
+    display: block;
+    position: fixed;
+    width:5%;
+    z-index: 21;
+    top:15%;
+    right: 5%;
+}
+.bottom_right_hidden img:last-child{
+    display: block;
+    position: fixed;
+    background: red;
+    width:70%;
+    z-index: 22;
+    top:30%;
+    right:15%;
+}
+.bottom .active{
+    display: block;
+}
+.mask_03{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 1;
+    width:100%;
+    background: #000;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    height:1000px;
+    z-index: 20;
+}
+
+
+/*  弹框 */
+
+.bounced{
+    -background: red;
+    display: none;
+    width:100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 12;
+}
+.bounced input{
+    display: block;
+    border:1px solid #dcdcdc;
+    width:86%;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 1.3em;
+    padding-left: 3%;
+    outline:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    appearance:button;
+    -moz-appearance:button; /*Firefox*/
+    -webkit-appearance:button; /*Safari 和 Chrome*/
+}
+.bounced input:last-child{
+    width:100%;
+    background: #f4541c;
+    color: #fff;
+    border:none;
+    cursor: pointer; -webkit-appearance: none;
+}
+.bounced h2{
+    text-align: left;
+    margin:20px 5%;
+    font-weight:500;
+    color: #000;
+}
+.bounced img{
+    position: absolute;
+    top:7%;
+    right: 5%;
+}
+.bounced .btn{
+    background: #59c7f9;
+    border:none;
+    color: #fff;
+    width:80%;
+}
+.bounced p{
+    color: #999;
+    margin-top:-2%;
+    margin-bottom: 4%;
+}
+#span_usesr{
+    display: block;
+    width: 86%;
+    height: 3em;
+    font-size: 1.3em;
+    line-height: 3em;
+    background: #e8690c;
+    margin:0 auto;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+.tabCon2 .appointment{
+    display: block;
+    color: #e8690c;
+    border:1px solid #dcdcdc;
+    background: url(../images/time.png) no-repeat 12% 54%;
+    width:94px;
+    font-size:1.5em;
+    border-radius: 5px;
+    padding:0.5% 0.8%;
+    z-index:5;
+    position: absolute;
+    left:47%;
+    cursor: pointer;
+    display: block;
+    margin-bottom:-5%;
+    text-align: right;
+}
+
+
+
+/*  遮罩  */
+.mask{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    width:100%;
+    background: #000;
+    height:1000px;
+    z-index: 7;
+}
+.mask_02{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    width:100%;
+    background: #000;
+    height:1000px;
+    z-index: 20;
+}
+.mask_03{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    width:100%;
+    background: #000;
+    height:1000px;
+    z-index: 20;
+}
+.bounced_pic{
+    display: none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index: 2100000000000;
+    top:0;
+    position: fixed;
+}
+.bounced_pic img{
+    /*top:0;
+    position: fixed;*/
+    width:100%;
+    z-index: 21;
+}
+
+.bounced_pic .know{
+    position:absolute;
+    bottom:-10%;
+    left:28%;
+    width:50%;
+}
+
+
+.bounced_pic_03{
+    display: none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index: 2100000000000;
+    top:0;
+    position: fixed;
+}
+.bounced_pic_03 img{
+    /*top:0;
+    position: fixed;*/
+    width:100%;
+    z-index: 21;
+}
+
+.bounced_pic_03 .know{
+    position:absolute;
+    bottom:-10%;
+    left:28%;
+    width:50%;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+
+/*selector 筛选*/
+.selector_wraper{
+    width:70%;
+    height: 60px;
+    color: #000;
+    margin:0 auto;
+    margin-top:48px;
+}
+.selector{
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #eaeaea;
+    color: #666;
+    font-size: 1.4em;
+}
+.selector_wraper span{
+    line-height: 60px;
+}
+
+.figure img{
+    display: none;
+}
+.figure .active{
+    display: block;
+}
+.sorts{
+    width:36%;
+    text-align: right;
+}
+.sorts li{
+    padding:0 10%;
+    border-left: 1px solid #eaeaea;
+    background: url(../images/used_02.png) no-repeat 90% 50%;
+    font-size:1.2em;
+    cursor: pointer;
+}
+.sorts li:last-child{
+    border-right: 1px solid #eaeaea;
+}
+.sort-wraper span{
+    display: block;
+    background: url(../images/used_01.png) no-repeat 25% 50%;
+    display: block;
+    color: #666;
+    line-height: 60px;
+    width:8%;
+    font-size:1.3em;
+    padding-right: 1%;
+    z-index:9999;
+    position: absolute;
+    left:14%;
+    cursor: pointer;
+    margin-bottom:-5%;
+    text-align: right;
+
+}
+
+/*container*/
+.container{
+    width:1200px;;
+    margin: 80px auto 0;
+}
+.item{
+    margin-bottom: 20px;
+}
+.brick-item:hover{
+    box-shadow: #cfcfcf 0px 0px 20px;
+    margin-top:-2px;
+}
+.brick-item{
+    width:390px;
+    border:1px solid #eaeaea;
+    box-sizing: border-box;
+    padding:20px 30px;
+    cursor: pointer;
+}
+.figure_small img{
+    float: left;
+    width:23%;
+    margin-right: 2.5%;
+    display:block;
+}
+.figure_small img:hover{
+    opacity:0.8;
+    filter:Alpha(opacity=80);
+}
+.figure_small img:last-child{
+    margin:0;
+}
+.figure_big{
+    margin-bottom: 5px;
+}
+.figure_big img{
+    width:100%;
+}
+.name{
+    color: #000;
+    font-size:1.3em;
+    text-align: left;
+    margin:8px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.new_price{
+    color: #ff7e00;
+    font-size:2.2em;
+    text-align: left;
+
+}
+.new_price span{
+    color: #ff7e00;
+    font-size:0.6em;
+    text-align: left;
+
+}
+.old_price{
+    color: #999999;
+    font-size:2.2em;
+    text-align: left;
+    text-decoration:line-through;
+}
+.old_price span{
+    color: #999999;
+    font-size:0.6em;
+    text-align: left;
+    text-decoration:none;
+}
+.info{
+    color: #777777;
+    font-size:1.1em;
+    text-align: left;
+    margin:0.6em 0 1em 0;
+}
+.detailed_info{
+    width:100%;
+}
+.detailed_info li{
+    width:33%;
+    color: #000;
+    font-size:1.2em;
+    float: left;
+    border: 1px solid #e2e1e1;
+    box-sizing: border-box;
+    padding:4%;
+}
+.detailed_info p{
+    color: #666666;
+    font-size:0.8em;
+    line-height: 1.6em;
+}
+
+

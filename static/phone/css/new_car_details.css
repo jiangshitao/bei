@@ -1,0 +1,236 @@
+
+
+/*  banner */
+.swiper-container1 {
+
+    width:100% !important;
+    margin:0 !important;
+}
+.swiper-slide img{
+    width:100%;
+}
+
+#video_pic{
+    position: absolute;
+    top:0;
+    z-index: 999;
+}
+
+/* info  */
+.con_info{
+    padding:2% 2%;
+}
+.con_info .title h2{
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #000;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}
+.con_info .title p{
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #e66923;
+    margin:0% 0;
+}
+.con_info>p{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #666;
+    margin:1% 0;
+}
+.con_info .title p span{
+    display: inline-block;
+    font-size:1.1em;
+}
+.con_info_num>ul{
+    float: left;
+    width: 33%;
+}
+.con_info_num span{
+    font-size: 1.0em;
+    color: #999;
+}
+.con_info_num p{
+    font-size: 1.0em;
+    color: #999;
+}
+.car_info li{
+    color: #999;
+    font-size:1.0em;
+    line-height: 2.0em;
+    height:4em;
+}
+.car_info .pro{
+    color:red;
+    margin:0;
+}
+.car_info{
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding:0 2%;
+    border-top:1px solid #e7e7e7;
+}
+.car_info ul{
+    width:33%;
+    margin:2% 0 0%;
+    float: left;
+}
+.car_info ul:last-child{
+    float: right;
+    width: 16%;
+}
+.car_info ul:nth-child(2){
+    width: 36%;
+    margin-left: 7%;
+}
+
+.car_info ul span{
+    text-align: left;
+    text-align: left;
+}
+.car_info ul p{
+    text-align: left;
+}
+
+/*  calculator 开始 */
+.calculator{
+    border-top:1px solid #e7e7e7;
+    margin-bottom: 12em;
+}
+.calculator .fenqi{
+    margin-left: 3%;
+}
+.calculator h2{
+    margin:3% 3%;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.fenqi_list{
+    margin-left: 2.5%;
+}
+.fenqi_list li{
+    color: #666666;
+    font-size:1.4em;
+    float: left;
+    width: 30%;
+    height: 40px;
+    background: #ededed;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    line-height: 2.4em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.fenqi_list .active{
+    background: #e8690c;
+    color: #fff;
+}
+
+
+/* conclusion */
+
+.pay{
+    border-top:1px solid #e7e7e7;
+    width:100%;
+    padding:3% 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    position: fixed;
+    bottom: 50px;;
+    background: #fff;
+}
+.pay>li{
+    color: #666666;
+    font-size:1.4em;
+    width: 32%;
+    float: left;
+    border-right:1px solid #e0e0e0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.pay>li:last-child{
+    border-right:none;
+    background: url(../images/new_icon.png) no-repeat 80% 32%;
+}
+.pay>li>p{
+    text-align: center;
+}
+.pay>li>span{
+    display: block;
+    text-align: center;
+    color: #e8690c;
+    font-size:1.6em;
+}
+
+/* order 下单   */
+.order{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height: 50px;
+    background: #e8690c;
+}
+.order a{
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.4em;
+    display: block;
+    letter-spacing: 2px;
+}
+
+
+
+/* 新增  */
+.con_info .list-service li{
+    background: #38ac6b;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 2%;
+    font-size: 1.0em;
+    padding:0.2% 1%;
+}
+.con_info .list-service li span{
+    font-family: Arial;
+    display: inline-block;
+}
+.con_info .list-service li:last-child{
+    margin-right: 0;
+}
+
+
+.details_info_right{
+    border-left: 1px solid #e7e7e7;
+    padding:0 4%;
+}
+.details_info_right p{
+    font-size: 1.1em;
+    color: #999;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+.details_info_left>p{
+    font-size: 1.4em;
+    color: #666;
+    margin:0 0 2%;
+}
+.details_info_left{
+    width:70%;
+}
+
+
+
+

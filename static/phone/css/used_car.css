@@ -1,0 +1,115 @@
+
+
+.container{
+    margin:15% 0 4%;
+}
+.container_list{
+    margin-bottom: 2%;
+}
+.con_left{
+    width: 49%;
+}
+.con_right{
+    width: 49%;
+}
+.con_item>img{
+    width:100%;
+}
+.con_item{
+    position: relative;
+    width: 100%;
+}
+.con_item>div:first-child{
+    position: absolute;
+    top:0;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+    background: url("../images/used_0.png") no-repeat 0 0;
+}
+.con_item>div>span{
+    display: block;
+    color: #fff;
+    font-size:0.8em;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.con_item_info{
+    width: 100%;
+}
+.con_left .con_item_info{
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    margin-top: -2%;
+    margin-left: -0.5%;
+}
+.con_right .con_item_info{
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    margin-top: -2%;
+    margin-left: -0%;
+}
+.con_item_info h2{
+    font-size: 1.3em;
+    font-weight: 400;
+    padding:3% 2% 0;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;
+}
+.con_item_info p{
+    font-size: 1.2em;
+    color: #666;
+    padding:1% 3%;
+}
+
+.con_item_info ul{
+    padding:0 2% 4%;
+}
+.con_item_info li:first-child{
+    color: #fd7e23;
+    margin-left: 2%;
+}
+.con_item_info li span{
+    display: inline-block;
+}
+.con_item_info li .new_price{
+    font-size: 1.4em;
+}
+.con_item_info li .old_price{
+    font-size: 1.4em;
+    text-decoration: line-through;
+}
+.con_item_info li:last-child{
+    color: #999;
+}
+
+/* 新增  */
+.con_item_info .list-service li{
+    background: #38ac6b;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 2%;
+    font-size: 0.76em;
+    padding:0.2% 1%;
+    line-height: 16px;
+    vertical-align:middle;
+}
+.con_item_info .list-service li span{
+    font-family: Arial;
+}
+.con_item_info .list-service li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+

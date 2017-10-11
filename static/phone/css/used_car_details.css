@@ -1,0 +1,413 @@
+
+
+
+/*  banner */
+
+.swiper-container1 {
+    width:100% !important;
+    margin:0 !important;
+}
+.swiper-slide img{
+    width:100%;
+}
+.swiper-pagination1{
+    bottom: 23px !important;
+}
+#video_pic{
+    position: absolute;
+    top:0;
+    z-index: 999;
+}
+
+/* details_info */
+.details_info{
+    padding:3% 2%;
+}
+.details_info h2{
+    font-size: 1.6em;
+    color: #000;
+    font-weight: 400;
+   /* white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    overflow: hidden;*/
+}
+.details_info p{
+    font-size: 1.4em;
+    color: #666;
+    font-weight: 400;
+    margin:0 0;
+}
+.details_info .price p{
+    font-size: 1.2em;
+    color: #999;
+}
+.details_info .price .new_price span{
+    color: #e8690c;
+    font-size: 2.0em;
+}
+.details_info .price p:first-child{
+    margin-right:6% ;
+}
+.details_info .price p:last-child{
+    margin:0% 0 1.5% ;
+}
+.details_info .price p span{
+    display: inline-block;
+}
+.details_info .price p span:nth-child(2){
+    color: #999;
+    font-size:1.1em;
+    font-weight: 400;
+}
+.details_info02{
+    padding:4% 2%;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.details_info02>h2{
+    font-size: 1.6em;
+    color: #000;
+    font-weight: 400;
+}
+.details_info02>p{
+    font-size: 1.2em;
+    color: #666;
+    font-weight: 400;
+}
+
+
+/* tab */
+.item_con{
+    margin-bottom: 15%;
+}
+.item_con_list img{
+    width:96%;
+    margin:0 2%;
+}
+.item_con_list img:first-child{
+    margin-top:5%;
+}
+.car_info li{
+    color: #666;
+    font-size:1.0em;
+    line-height: 1.2em;
+    height:3.4em;
+}
+
+.car_info .pro{
+    color:red;
+    margin:0;
+}
+.car_info{
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    border-bottom: 1px solid #e7e7e7;
+
+}
+
+/* 修改开始 */
+.car_info ul{
+    width:50%;
+    margin:3% 0 -2%;
+    /* float: left;*/
+    font-size: 1.2em;
+}
+.car_info ul:first-child{
+    margin-left: 2%;
+}
+/*添加*/
+.car_info ul li p{
+    color: #666;
+}
+.car_info ul li span{
+    color: #000;
+}
+/* .car_info{
+     margin:0 2%
+ }*/
+/* 修改end */
+
+
+.car_info ul:nth-child(2){
+    width: 36%;
+}
+.car_info ul span{
+    text-align: left;
+    text-align: left;
+}
+.car_info ul p{
+    text-align: left;
+}
+
+
+/* bottom */
+.bottom{
+    width:100%;
+    position: fixed;
+    bottom: 0;
+}
+.bottom>a{
+    width:50%;
+    height:50px;
+    font-size: 1.4em;
+    color: #fff;
+}
+.bottom>a:first-child{
+    background: #e8690c;
+    text-align: center;
+    line-height: 50px;
+}
+.bottom>a:last-child{
+    background: #e20000;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/*  贷款计算器 弹框 */
+/*  calculator 开始 */
+.calculator{
+    border-top:1px solid #e7e7e7;
+}
+.calculator>.title>h2{
+    text-align: left;
+    font-weight:600;
+    color: #000;
+}
+.calculator .title{
+    border-bottom: 1px solid #e5e5e5;
+    padding:5% 3%;
+}
+.calculator .title img{
+    display: block;
+}
+.calculator .fenqi{
+    margin-left: 3%;
+}
+.calculator h2{
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #000;
+}
+.fenqi_list h2{
+    margin:3% 0;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #000;
+}
+.fenqi_list{
+    margin-left: 2.5%;
+}
+.fenqi_list li{
+    color: #666666;
+    font-size:1.4em;
+    float: left;
+    width: 23%;
+    height: 40px;
+    background: #ededed;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    line-height: 2.4em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.fenqi_list .active{
+    background: #e8690c;
+    color: #fff;
+}
+
+
+
+/*  弹框 */
+
+.bounced_02{
+    display: none;
+    width:100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 13;
+    top:0;
+    overflow-y:scroll;
+}
+.bounced_02 input{
+    display: block;
+    border:1px solid #dcdcdc;
+    width:93%;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 1.6em;
+    padding-left: 3%;
+    outline:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    appearance:button;
+    -moz-appearance:button; /*Firefox*/
+    -webkit-appearance:button; /*Safari 和 Chrome*/
+}
+
+.bounced_02 input:last-child{
+    width:100%;
+    background: #f4541c;
+    color: #fff;
+    border:none;
+    cursor: pointer; -webkit-appearance: none;
+}
+/*.bounced_02 .btn_02{
+    background: #59c7f9;
+    border:none;
+    color: #fff;
+    width:80%;
+    position: fixed;
+    bottom: 0;
+}*/
+.bounced_02 p{
+    color: #666;
+    margin-top:-2%;
+    margin-bottom: 4%;
+    font-size: 1.0em;
+}
+#span_usesr_02{
+    display: block;
+    width: 86%;
+    height: 3em;
+    font-size: 1.3em;
+    line-height: 3em;
+    background: #e8690c;
+    margin:0 auto;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+.tabCon2 .appointment_02{
+    display: block;
+    color: #e8690c;
+    border:1px solid #dcdcdc;
+    background: url(../images/time.png) no-repeat 12% 54%;
+    width:94px;
+    font-size:1.5em;
+    border-radius: 5px;
+    padding:0.5% 0.8%;
+    z-index:5;
+    position: absolute;
+    left:47%;
+    cursor: pointer;
+    display: block;
+    margin-bottom:-5%;
+    text-align: right;
+}
+
+
+/* conclusion */
+
+.pay{
+    margin: 0 auto;
+    border-top:1px solid #e7e7e7;
+    width:96%;
+    padding:4% 0 3% 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    background: #fff;
+    border:1px solid #e0e0e0;
+}
+.pay_h2{
+    margin:3% 0 5% 2%;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #000;
+}
+.pay>li{
+    color: #666666;
+    font-size:1.4em;
+    width: 33%;
+    float: left;
+    border-right:1px solid #e0e0e0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.pay>li:last-child{
+    border-right:none;
+    background: url(../images/new_icon.png) no-repeat 80% 32%;
+}
+.pay>li>p{
+    text-align: center;
+}
+.pay>li>span{
+    display: block;
+    text-align: center;
+    color: #e8690c;
+    font-size:1.6em;
+    font-family: Arial;
+}
+
+
+.form_01 h2{
+    margin:5% 0 5% 5%;
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 400;
+}
+
+/*  返回顶部  */
+
+#tophovertree{
+    position:fixed;
+    z-index:2;
+    width:40px;height:40px;
+    right:10px;
+    bottom:80px;
+    cursor:pointer;
+    background: url("../images/go_top.png") no-repeat 15% 15%;
+    opacity:0.9;
+    display:none
+}
+
+
+
+/* 新增  */
+.details_info .list-service li{
+    background: #38ac6b;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 2%;
+    font-size: 1.0em;
+    padding:0.2% 1%;
+}
+.details_info .list-service li span{
+    font-family: Arial;
+    display: inline-block;
+}
+.details_info .list-service li:last-child{
+    margin-right: 0;
+}
+.details_info_left {
+    width:70%;
+}
+
+.details_info_right{
+    border-left: 1px solid #e7e7e7;
+    padding:0 4%;
+}
+.details_info_right p{
+    font-size: 1.1em;
+    color: #999;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+
+
